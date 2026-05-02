@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Araway Express | Pan India Logistics & Truck Transport</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#f5f7fa;
+    line-height:1.6;
+}
+
+/* NAV */
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:#0b1d2a;
+    color:#fff;
+    flex-wrap:wrap;
+}
+.navbar .logo-container {
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+.navbar .logo {
+    height:50px;
+    width:auto;
+}
+.navbar h2 {
+    margin:0;
+    font-size:24px;
+}
+.navbar div {
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    align-items:center;
+}
+.navbar a {
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+}
+.navbar a:hover {
+    color:#ff6b00;
+}
+
+/* HERO */
+.hero {
+    height:60vh;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+.hero h1 {
+    font-size:clamp(28px, 5vw, 50px);
+    margin:10px 0;
+}
+.hero p {
+    font-size:clamp(14px, 2.5vw, 18px);
+    margin:5px 0;
+}
+.btn {
+    background:#ff6b00;
+    padding:12px 25px;
+    color:#fff;
+    border-radius:5px;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:20px;
+    transition:0.3s;
+}
+.btn:hover {
+    background:#e55a00;
+}
+
+/* SECTION */
+.section {
+    padding:40px 20px;
+}
+.section h2 {
+    text-align:center;
+    margin-bottom:30px;
+    font-size:32px;
+}
+.section h3 {
+    font-size:20px;
+    margin-top:20px;
+}
+
+/* GRID */
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+    width:100%;
+}
+.card {
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+.card:hover {
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* FLEET */
+.fleet img {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* TABLE */
+table {
+    width:100%;
+    margin:20px 0;
+    border-collapse:collapse;
+}
+th, td {
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:left;
+}
+th {
+    background:#0b1d2a;
+    color:#fff;
+}
+
+/* CONTACT */
+.bgcontact {
+    background:#f8f9fa;
+    border-radius:10px;
+}
+input, textarea {
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:5px;
+    border:1px solid #ddd;
+    font-family:inherit;
+}
+input:focus, textarea:focus {
+    outline:none;
+    border-color:#ff6b00;
+}
+
+/* FEATURES */
+.our-features {
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+}
+.our-features > div:first-child {
+    flex-shrink:0;
+    font-size:40px;
+    min-width:50px;
+}
+.our-features > div:last-child {
+    flex:1;
+}
+.our-features h6 {
+    margin:10px 0 8px 0;
+    font-size:18px;
+    font-weight:600;
+    color:#0b1d2a;
+}
+
+/* FOOTER */
+.footer {
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:30px 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px) {
+    .hero {
+        height:50vh;
+    }
+    .section {
+        padding:30px 15px;
+    }
+    .navbar div {
+        gap:10px;
+    }
+    .navbar .logo {
+        height:40px;
+    }
+    .navbar h2 {
+        font-size:20px;
+    }
+    table {
+        font-size:14px;
+    }
+}
+
+@media (max-width:576px) {
+    .navbar {
+        flex-direction:column;
+        gap:15px;
+    }
+    .navbar div {
+        justify-content:center;
+        width:100%;
+    }
+    .navbar .logo-container {
+        justify-content:center;
+    }
+    .navbar .logo {
+        height:35px;
+    }
+    .hero {
+        height:40vh;
+    }
+    .section {
+        padding:20px 10px;
+    }
+    .grid {
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="navbar">
+<div class="logo-container">
+<img src="Images/logo.jpeg" alt="Araway Express Logo" class="logo">
+<h2>Araway Express</h2>
+</div>
+<div>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#fleet">Fleet</a>
+<a href="#book">Book</a>
+<a href="#calculator">Pricing</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+<h1>Fast & Reliable Logistics Across India</h1>
+<p>FTL • PTL • Express Delivery | Trusted Transport Partner</p>
+<p>Pan India Logistics & Truck Transport Solutions</p>
+<a href="https://wa.me/919910414712" class="btn">📞 WhatsApp Now</a>
+</div>
+
+<!-- SERVICES -->
+<div class="section" id="services">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card"><h3>Full Truck Load (FTL)</h3><p>Dedicated trucks for transport and bulk shipments across India.</p></div>
+<div class="card"><h3>Part Truck Load (PTL)</h3><p>Shared loads for cost efficiency. Cost-effective shared transport solutions.</p></div>
+<div class="card"><h3>Express Delivery</h3><p>Fast delivery solutions. Express and time-critical shipments nationwide.</p></div>
+</div>
+</div>
+
+<!-- FLEET -->
+<div class="section fleet" id="fleet">
+<h2>Our Fleet</h2>
+<div class="grid">
+<img src="https://images.unsplash.com/photo-1592838064575-70ed626d3a0e">
+<img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c">
+</div>
+
+<br>
+
+<table>
+        <tr>
+            <th>Truck Type</th>
+            <th>Size</th>
+            <th>Capacity</th>
+            <th>Usage</th>
+        </tr>
+        <tr>
+            <td>14 ft Truck</td>
+            <td>14 Feet</td>
+            <td>3–5 Tons</td>
+            <td>Small loads, city transport</td>
+        </tr>
+        <tr>
+            <td>19 ft Truck</td>
+            <td>19 Feet</td>
+            <td>6–9 Tons</td>
+            <td>Medium loads</td>
+        </tr>
+        <tr>
+            <td>22 ft Truck</td>
+            <td>22 Feet</td>
+            <td>10–16 Tons</td>
+            <td>Heavy goods</td>
+        </tr>
+        <tr>
+            <td>32 ft Container</td>
+            <td>32 Feet</td>
+            <td>7–18 Tons</td>
+            <td>Secure cargo</td>
+        </tr>
+    </table>
+
+    <p style="margin-top:20px;">
+    Different truck types are used based on load capacity and distance, helping optimize cost and efficiency in logistics operations.    </p>
+</div>
+
+<!-- WHY US -->
+<div class="section">
+<h2>Why Choose Araway Express?</h2>
+<div class="grid">
+<div class="card">Pan India Network</div>
+<div class="card">On-Time Delivery</div>
+<div class="card">Verified Drivers</div>
+<div class="card">Competitive Pricing</div>
+</div>
+</div>
+
+
+    <section class="section" id="main-carousel">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color:#0b1d2a;">Logistics in Motion</h2>
+            <div class="row">
+                <div class="col px-0">
+                    <div id="carouselKenBurns" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselKenBurns" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselKenBurns" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselKenBurns" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Images/corridor.jpg" class="d-block w-100" alt="Logistics corridor">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Efficient Logistics</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/logisticindia.jpg" class="d-block w-100" alt="Logistics in India">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Pan-India Transport</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Images/supply.jpg" class="d-block w-100" alt="Supply chain delivery">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Reliable Supply Chain</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselKenBurns" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselKenBurns" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container my-5">
+    <!-- Title -->
+    <div class="text-center mb-4">
+        <h2 class="fw-bold text-success">Track Your Shipment</h2>
+        <p class="text-muted">Enter your Bill Number to check the delivery status</p>
+    </div>
+    <!-- Tracking Form -->
+    <div class="card shadow-lg border-0 rounded-4 p-4 mb-4">
+        <form id="trackShipmentForm" method="post">
+            <input type="hidden" name="_token" value="hmTKUPMkUcsyzKWl18gV4IHVfVTrrxrl2bHrfYCK" autocomplete="off">            <div class="row g-3 justify-content-center">
+                <div class="col-md-6">
+                    <input type="text" id="shipmentNumber" class="form-control form-control-lg"
+                        placeholder="Enter Bill Number" required>
+                </div>
+                <div class="col-md-3 text-center">
+                    <button type="submit" class="btn btn-warning btn-lg w-100 fw-bold">Track</button>
+                </div>
+            </div>
+        </form>
+        <p id="message" class="text-danger mt-2 text-center"></p>
+    </div>
+
+    <!-- Shipment Info -->
+    <div class="card shadow-sm border-0 rounded-4 p-4">
+        <div class="card-body">
+            <div class="mb-4">
+                <strong>Shipping By:</strong>
+                <span class="text-success fw-semibold">Araway Xpress</span> |
+                <i class="fa fa-phone text-primary"></i>
+                <a href="tel:+917232901999" class="text-decoration-none text-dark">+91-9910414712</a>
+            </div>
+
+            <!-- Progress Tracker -->
+            <div class="track d-flex justify-content-between text-center">
+                <div class="step" id="step1">
+                    <span class="icon"><i class="fa fa-file-alt"></i></span>
+                    <span class="text">Order Booked</span>
+                </div>
+                <div class="step" id="step2">
+                    <span class="icon"><i class="fa fa-user"></i></span>
+                    <span class="text">Dispatch</span>
+                </div>
+                <div class="step" id="step3">
+                    <span class="icon"><i class="fa fa-truck"></i></span>
+                    <span class="text">On the Way</span>
+                </div>
+                <div class="step" id="step4">
+                    <span class="icon"><i class="fa fa-box"></i></span>
+                    <span class="text">Ready for Delivery</span>
+                </div>
+                <div class="step" id="step5">
+                    <span class="icon"><i class="fa fa-check-circle"></i></span>
+                    <span class="text">Delivered</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row margintop" id="about">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+            <div class="left-about padding10">
+                <img src="Images/load.jpg" alt="image"
+                    class="img-fluid animateimge targetimge">
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-lg-5 ">
+            <div class="about-right padding10">
+                <div>
+                    <h6 class="mt-lg-3 fw-bold primarycolor">About Us</h6>
+                    <p class="blackcolor font30 width75 fw-bold">Quick Transport and Logistics Solutions</p>
+                    <p class="lightblack">
+                        At Araway Xpress, we specialize in providing quick, reliable, and efficient transport and
+                        logistics solutions tailored to your needs. With a commitment to excellence, we ensure seamless
+                        movement of goods across air, sea, road, and rail, backed by our expertise in customs clearance
+                        and warehousing. Your trust drives our journey toward delivering success, one shipment at a
+                        time. 🚛🌍📦</p>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-6 col-md-6">
+                        <div>
+                            <i class="fa-solid fa-globe globe"></i>
+                            <div class="mt-3">
+                                <h5>Global Coverage</h5>
+                                <p class="lightblack">Araway Xpress ensures seamless transportation and logistics
+                                    solutions across the globe. With our extensive network and expertise, we connect
+                                    businesses to international markets efficiently and reliably. 🌍✈️🚢</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <i class="fa-solid fa-truck-fast globe"></i>
+                        <div class="mt-3">
+                            <h5>Pan-India Coverage</h5>
+                            <p class="lightblack">Araway Xpress proudly serves all corners of India, offering
+                                seamless transportation and logistics solutions across the country. No matter where you
+                                are, we ensure your goods reach their destination efficiently and on time. 🇮🇳🚛📦</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <a href="./index.html" class="explore-more">Explore More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row margintop">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div>
+                <div>
+                    <h6 class="mt-3 fw-bold primarycolor">Some Facts</h6>
+                    <p class="blackcolor font30  fw-bold">#1 Place To Manage All Of Your Shipments</p>
+                    <p class="lightblack">
+                        Araway Xpress is the ultimate destination for managing all your shipments, providing a
+                        seamless and efficient experience from start to finish. Whether you're shipping locally or
+                        internationally, our advanced tracking systems and reliable services give you complete
+                        control over your shipments. Our platform ensures transparency, real-time updates, and
+                        smooth coordination for every stage of the process. Trust Araway Xpress to handle your
+                        logistics needs with precision and care, ensuring your goods arrive on time and in perfect
+                        condition. 📦🚚🌍</p>
+                </div>
+                <div class="d-flex gap-5">
+                    <div class="headphone"><i class="fa-solid fa-headphones "></i></div>
+                    <div class="contact-headphone">
+                        <p class="fw-bold">Call for any query!</p>
+                        <h5 class="primarycolor fw-bold">+91 9910414712</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
+            <div class="row mt-md-5">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="client-box">
+                        <i class="fa-solid fa-users"></i>
+                        <p class="mt-4 fw-bold " id="counter">1000+</p>
+                        <h5>Happy Clients</h5>
+                    </div>
+                    <div class="client-box mt-4 bg-info">
+                        <i class="fa-solid fa-ship"></i>
+                        <p class="mt-4 fw-bold " id="counter1">5000+</p>
+                        <h5>Complete Shipments</h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 right-client ">
+                    <div class="client-box mt-4 bg-success">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="mt-4 fw-bold " id="counter2">500+</p>
+                        <h5>Customer Reviews</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row mt-lg-3 margintop" id="service">
+        <div>
+            <h2 class="text-center mb-4" style="font-size:2.5rem;color:#0b1d2a;">Explore Our Services</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mt-md-4 col-sm-12">
+            <div class="p-3 our-service">
+                <div>
+                    <div class="box-overflow">
+                        <img src="Images/air.jpg" alt="Air Freight" class="img-fluid">
+                    </div>
+
+                    <p class="air-freight">Air Freight</p>
+                    <p class="lightblack">Air Freight ensures fast and reliable transportation of goods across
+                        global destinations, offering efficient solutions for time-sensitive shipments. 🌍✈️
+                    </p>
+                    <div class="read-more">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-md-4 col-sm-12">
+            <div class="p-3 our-service">
+                <div>
+                    <div class="box-overflow">
+                        <img src="Images/ocean.jpg" alt="Ocean Freight" class="img-fluid">
+                    </div>
+
+                    <p class="air-freight">Ocean Freight</p>
+                    <p class="lightblack">Ocean Freight offers cost-effective and reliable solutions for
+                        transporting goods in bulk across international waters. 🚢🌊
+                    </p>
+                    <div class="read-more">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-md-4 col-sm-12">
+            <div class="p-3 our-service">
+                <div>
+                    <div class="box-overflow">
+                        <img src="Images/road.jpg" alt="Road Freight" class="img-fluid">
+                    </div>
+
+                    <p class="air-freight">Road Freight</p>
+                    <p class="lightblack">Road Freight ensures flexible and efficient transportation of goods over
+                        short and long distances with door-to-door service. 🚛🛣️
+                    </p>
+                    <div class="read-more">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-md-4 col-sm-12">
+            <div class="p-3 our-service">
+                <div>
+                    <div class="box-overflow">
+                        <img src="Images/rail.jpg" alt="Rail Freight" class="img-fluid">
+                    </div>
+
+                    <p class="air-freight">Train Freight</p>
+                    <p class="lightblack">Train Freight offers reliable and eco-friendly transportation for heavy
+                        and bulk goods across vast distances. 🚂📦
+                    </p>
+                    <div class="read-more">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-md-4 col-sm-12">
+            <div class="p-3 our-service">
+                <div>
+                    <div class="box-overflow">
+                        <img src="Images/custom.jpg" alt="Customs Clearance"
+                            class="img-fluid">
+                    </div>
+
+                    <p class="air-freight">Customs Clearance</p>
+                    <p class="lightblack">Customs Clearance ensures smooth processing of import and export goods by
+                        handling all legal and regulatory requirements. 🛃📑
+                    </p>
+                    <div class="read-more">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-md-4 col-sm-12">
+            <div class="p-3 our-service">
+                <div>
+                    <div class="box-overflow">
+                        <img src="Images/Warehousing.jpeg" alt="Warehouse" class="img-fluid">
+                    </div>
+
+                    <p class="air-freight">Warehouse Solutions</p>
+                    <p class="lightblack">Warehouse Solutions provide secure storage, efficient inventory
+                        management, and streamlined distribution for your goods. 🏢📦
+                    </p>
+                    <div class="read-more">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i><span>Read More</span></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section class="section" id="features">
+    <div class="row   margintop">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div>
+                <h2 style="font-size:2.5rem;color:#0b1d2a;margin-bottom:15px;">Our Features</h2>
+                <p class="blackcolor font30 fw-bold" style="font-size:1.3rem;margin-bottom:30px;">At Araway Xpress, we offer a range of features designed to streamline your shipping experience:</p>
+                <div>
+                    <div class="our-features mt-5">
+                        <div>
+                            <p style="font-size:30px;"> 📍</p>
+                        </div>
+                        <div>
+                            <h6>End-to-End Tracking</h6>
+                            <p class="lightblack">Stay updated with real-time tracking of your shipments, ensuring
+                                complete transparency and control. </p>
+                        </div>
+
+
+                    </div>
+                    <div class="our-features mt-5">
+                        <div>
+                            <p style="font-size:30px;">⏰</p>
+                        </div>
+                        <div>
+                            <h6>Timely Deliveries: </h6>
+                            <p class="lightblack">We prioritize punctuality, ensuring your goods reach their
+                                destination on time, every time. </p>
+                        </div>
+
+
+                    </div>
+                    <div class="our-features mt-5">
+                        <div>
+                            <p style="font-size:30px;">🇮🇳</p>
+                        </div>
+                        <div>
+                            <h6>Nationwide Coverage:</h6>
+                            <p class="lightblack">From north to south, east to west, we offer logistics solutions
+                                across India, making your business operations smoother.</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="our-features mt-5">
+                        <div>
+                            <p style="font-size:30px;">🏢</p>
+                        </div>
+                        <div>
+                            <h6>Warehousing Solutions:</h6>
+                            <p class="lightblack">Secure and efficient storage solutions, with proper inventory
+                                management and easy access to goods. </p>
+                        </div>
+
+
+                    </div>
+                    <div class="our-features mt-5">
+                        <div>
+                            <p style="font-size:30px;">🚛</p>
+                        </div>
+                        <div>
+                            <h6>Flexible Transport Options: </h6>
+                            <p class="lightblack">Air, sea, road, or rail—choose the mode of transport that suits
+                                your needs and budget. </p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="mt-4">
+                <img src="Images/image2.jpg" alt="Features" class="img-fluid">
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <section class="section" id="contact">
+    <div class="row mt-5">
+        <div class="col-lg-5 col-md-12 col-sm-12 mt-5">
+            <div>
+                <h2 style="font-size:2.5rem;color:#0b1d2a;margin-bottom:15px;">Get A Quote</h2>
+
+                <p class="lightblack mt-4">Looking for reliable and efficient logistics solutions? Request a free
+                    quote today! Simply fill out the form with your shipment details, and our team at Araway Xpress
+                    will provide you with a customized, competitive quote tailored to your needs. Let us
+                    help you streamline your logistics with transparent pricing and exceptional service. 📦✈️🚚
+                </p>
+
+            </div>
+            <div>
+                <h6 class="mt-3 fw-bold primarycolor">Request A Free Quote!</h6>
+
+                <p class="lightblack mt-4">Looking for reliable and efficient logistics solutions? Request a free
+                    quote today! Simply fill out the form with your shipment details, and our team at Araway Xpress
+                    will provide you with a customized, competitive quote tailored to your needs. Let us
+                    help you streamline your logistics with transparent pricing and exceptional service. 📦✈️🚚
+                </p>
+                <div class="d-flex gap-5">
+                    <div class="headphone"><i class="fa-solid fa-headphones " aria-hidden="true"></i></div>
+                    <div class="contact-headphone">
+                        <p class="fw-bold">Call for any query!</p>
+                        <h5 class="primarycolor fw-bold">+91 9910414712</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-12 col-sm-12 mt-5">
+            <div class="p-5 bgcontact">
+                <form action="https://demo.arawayxpress.in/inquiry" method="post">
+                    <input type="hidden" name="_token" value="hmTKUPMkUcsyzKWl18gV4IHVfVTrrxrl2bHrfYCK" autocomplete="off">                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control border-0 inpstyle" name="name"
+                                placeholder="Your Name" required>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="email" class="form-control border-0 inpstyle" name="email"
+                                placeholder="Your Email" required>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <input type="text" class="form-control border-0 inpstyle" name="mobile"
+                                placeholder="Your Mobile" required>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label for="states" class="form-label">State (Origin)</label>
+                            <select class="form-select border-0 inpstyle " id="states" name="states">
+
+                                <option value="">Select State</option>
+                                                                <option value="1">Andaman and Nicobar Islands</option>
+                                                                <option value="2">Andhra Pradesh</option>
+                                                                <option value="3">Arunachal Pradesh</option>
+                                                                <option value="4">Assam</option>
+                                                                <option value="5">Bihar</option>
+                                                                <option value="6">Chandigarh</option>
+                                                                <option value="7">Chhattisgarh</option>
+                                                                <option value="8">Dadra and Nagar Haveli</option>
+                                                                <option value="9">Daman and Diu</option>
+                                                                <option value="10">Delhi</option>
+                                                                <option value="11">Goa</option>
+                                                                <option value="12">Gujarat</option>
+                                                                <option value="13">Haryana</option>
+                                                                <option value="14">Himachal Pradesh</option>
+                                                                <option value="15">Jammu and Kashmir</option>
+                                                                <option value="16">Jharkhand</option>
+                                                                <option value="17">Karnataka</option>
+                                                                <option value="18">Kerala</option>
+                                                                <option value="19">Lakshadweep</option>
+                                                                <option value="20">Madhya Pradesh</option>
+                                                                <option value="21">Maharashtra</option>
+                                                                <option value="22">Manipur</option>
+                                                                <option value="23">Meghalaya</option>
+                                                                <option value="24">Mizoram</option>
+                                                                <option value="25">Nagaland</option>
+                                                                <option value="26">Odisha</option>
+                                                                <option value="27">Pondicherry</option>
+                                                                <option value="28">Punjab</option>
+                                                                <option value="29">Rajasthan</option>
+                                                                <option value="30">Sikkim</option>
+                                                                <option value="31">Tamil Nadu</option>
+                                                                <option value="32">Telangana</option>
+                                                                <option value="33">Tripura</option>
+                                                                <option value="34">Uttar Pradesh</option>
+                                                                <option value="35">Uttarakhand</option>
+                                                                <option value="36">West Bengal</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label for="district_name" class="form-label">City (Origin)</label>
+                            <select class="form-select border-0 inpstyle" name="district" id="district_name"
+                                required>
+                                <option selected disabled value="">Select State First</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Ahmedabad">Ahmedabad</option>
+                                <option value="Jaipur">Jaipur</option>
+                                <option value="Surat">Surat</option>
+                            </select>
+                            <div class="invalid-feedback">Select City</div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label for="destionation_state" class="form-label">State (Destination) </label>
+                            <select class="form-select border-0 inpstyle " id="destionation_state"
+                                name="destionation_state">
+
+                                <option value="">Select State</option>
+                                                                <option value="1">Andaman and Nicobar Islands</option>
+                                                                <option value="2">Andhra Pradesh</option>
+                                                                <option value="3">Arunachal Pradesh</option>
+                                                                <option value="4">Assam</option>
+                                                                <option value="5">Bihar</option>
+                                                                <option value="6">Chandigarh</option>
+                                                                <option value="7">Chhattisgarh</option>
+                                                                <option value="8">Dadra and Nagar Haveli</option>
+                                                                <option value="9">Daman and Diu</option>
+                                                                <option value="10">Delhi</option>
+                                                                <option value="11">Goa</option>
+                                                                <option value="12">Gujarat</option>
+                                                                <option value="13">Haryana</option>
+                                                                <option value="14">Himachal Pradesh</option>
+                                                                <option value="15">Jammu and Kashmir</option>
+                                                                <option value="16">Jharkhand</option>
+                                                                <option value="17">Karnataka</option>
+                                                                <option value="18">Kenmore</option>
+                                                                <option value="19">Kerala</option>
+                                                                <option value="20">Lakshadweep</option>
+                                                                <option value="21">Madhya Pradesh</option>
+                                                                <option value="22">Maharashtra</option>
+                                                                <option value="23">Manipur</option>
+                                                                <option value="24">Meghalaya</option>
+                                                                <option value="25">Mizoram</option>
+                                                                <option value="26">Nagaland</option>
+                                                                <option value="27">Narora</option>
+                                                                <option value="28">Natwar</option>
+                                                                <option value="29">Odisha</option>
+                                                                <option value="30">Paschim Medinipur</option>
+                                                                <option value="31">Pondicherry</option>
+                                                                <option value="32">Punjab</option>
+                                                                <option value="33">Rajasthan</option>
+                                                                <option value="34">Sikkim</option>
+                                                                <option value="35">Tamil Nadu</option>
+                                                                <option value="36">Telangana</option>
+                                                                <option value="37">Tripura</option>
+                                                                <option value="38">Uttar Pradesh</option>
+                                                                <option value="39">Uttarakhand</option>
+                                                                <option value="40">Vaishali</option>
+                                                                <option value="41">West Bengal</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label for="destination_district_name" class="form-label">City (Destination)</label>
+                            <select class="form-select border-0 inpstyle" name="destination_district_name"
+                                id="destination_district_name" required>
+                                <option selected disabled value="">Select State First</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Ahmedabad">Ahmedabad</option>
+                                <option value="Jaipur">Jaipur</option>
+                                <option value="Surat">Surat</option>
+                                <option value="Jammu">Jammu</option>
+                                <option value="Ludhiana">Ludhiana</option>
+                                √<option value="Agra">Agra</option>
+                                <option value="Nashik">Nashik</option>
+                                <option value="Faridabad">Faridabad</option>
+                                <option value="Meerut">Meerut</option>
+                                <option value="Rajkot">Rajkot</option>
+                            </select>
+                            <div class="invalid-feedback">Select City</div>
+                                                    </div>
+                        <div class="col-12">
+                            <textarea class="form-control border-0 inpstyle" name="description" placeholder="What would you like to know?"
+                                required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn  w-100 py-3 submitbtn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- <div class="row mt-lg-3">
+                <div>
+                    <h6 class="mt-3 fw-bold primarycolor text-center">Our Team</h6>
+                    <p class="blackcolor font30 text-center fw-bold">Expert Team Members</p>
+                </div>
+            </div> -->
+    <!-- <div class="row">
+                <div class="col-lg-3 col-md-6 mt-5 col-sm-12">
+                    <div class="p-3 our-service">
+                        <div>
+                            <div class="box-overflow">
+                                <img src="img/employee-images/aman.jpg" alt=""
+                                    class="img-fluid">
+                            </div>
+
+                            <p class="air-freight">Aman</p>
+                            
+                            
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-5 col-sm-12">
+                    <div class="p-3 our-service">
+                        <div>
+                            <div class="box-overflow">
+                                <img src="img/employee-images/aniketsoni.jpg" alt=""
+                                    class="img-fluid">
+                            </div>
+
+                            <p class="air-freight">Aniket Soni</p>
+                            
+                            
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-5 col-sm-12">
+                    <div class="p-3 our-service">
+                        <div>
+                            <div class="box-overflow">
+                                <img src="img/employee-images/asrafali.jpg" alt=""
+                                    class="img-fluid">
+                            </div>
+
+                            <p class="air-freight">Asraf ali</p>
+                            
+                            <div class="read-more">
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-5 col-sm-12">
+                    <div class="p-3 our-service">
+                        <div>
+                            <div class="box-overflow">
+                                <img src="img/employee-images/kaptan.jpg" alt=""
+                                    class="img-fluid">
+                            </div>
+
+                            <p class="air-freight">Kaptan</p>
+                            
+                            <div class="read-more">
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-5 col-sm-12">
+                    <div class="p-3 our-service">
+                        <div>
+                            <div class="box-overflow">
+                                <img src="img/employee-images/pintusingh.jpg" alt=""
+                                    class="img-fluid">
+                            </div>
+
+                            <p class="air-freight">Pintu Singh</p>
+                            
+                            <div class="read-more">
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-5 col-sm-12">
+                    <div class="p-3 our-service">
+                        <div>
+                            <div class="box-overflow">
+                                <img src="img/employee-images/unknown.jpg" alt=""
+                                    class="img-fluid">
+                            </div>
+
+                            <p class="air-freight">Full Name</p>
+                            
+                            <div class="read-more">
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div> -->
+    
+</div>
+<div class="container" id="career">
+    <div class="row mt-lg-3">
+        <div>
+            <h6 class="mt-3 fw-bold primarycolor text-center">Careers</h6>
+            <p class="blackcolor font30 text-center fw-bold">Join Our Team</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+            <div>
+                <h2 style="font-size:2.5rem;color:#0b1d2a;margin-bottom:15px;">Work With Us</h2>
+                <p class="lightblack mt-4">At Araway Xpress, we are always on the lookout for talented and passionate individuals to join our team. If you are interested in a career in logistics and transportation, we encourage you to explore our current job openings and apply today. Join us in shaping the future of logistics and making a difference in the industry! 🚀👥</p>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+            <div class="p-5 bgcontact">
+                <form action="https://demo.arawayxpress.in/career" method="post">
+                    <input type="hidden" name="_token" value="hmTKUPMkUcsyzKWl18gV4IHVfVTrrxrl2bHrfYCK" autocomplete="off">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <input type="text" class="form-control border-0 inpstyle" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control border-0 inpstyle" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="tel" class="form-control border-0 inpstyle" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control border-0 inpstyle" name="position" placeholder="Position Applied For" required>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control border-0 inpstyle" name="experience" placeholder="Tell us about your experience..." required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn w-100 py-3 submitbtn">Submit Application</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BOOKING TRUCK FORM -->
+<div class="container" id="book">
+    <div class="row mt-5 mb-5">
+        <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
+            <h2 class="mb-4">Book a Truck</h2>
+            <div class="p-5 bgcontact">
+                <input type="text" id="bookingName" class="form-control mb-3" placeholder="Your Name" required>
+                <input type="text" id="bookingPhone" class="form-control mb-3" placeholder="Phone">
+                <input type="text" id="bookingPickup" class="form-control mb-3" placeholder="Pickup Location">
+                <input type="text" id="bookingDrop" class="form-control mb-3" placeholder="Drop Location">
+                <input type="number" id="bookingKms" class="form-control mb-3" placeholder="Distance (KM)">
+                <input type="number" id="bookingRate" class="form-control mb-3" placeholder="Rate/km">
+                <button class="btn w-100 py-2" onclick="bookTruck()">Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- PRICING CALCULATOR -->
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
+            <div class="section" id="calculator">
+                <h2 class="mb-4">Freight Calculator</h2>
+                <div class="p-5 bgcontact">
+                    <input type="number" id="calcKms" class="form-control mb-3" placeholder="Distance (KM)" min="0">
+                    <input type="number" id="calcRate" class="form-control mb-3" placeholder="Rate per KM" min="0">
+                    <button class="btn w-100 py-2 mb-3" onclick="calculateFreight()">Calculate</button>
+                    <h3 id="result" class="text-center text-success"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- CONTACT FORM -->
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
+            <div class="section contact">
+                <h2 class="text-center mb-4">Get a Quote</h2>
+                <div class="p-5 bgcontact">
+                    <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
+                        <input type="text" name="name" class="form-control mb-3" placeholder="Name" required>
+                        <input type="text" name="phone" class="form-control mb-3" placeholder="Phone" required>
+                        <input type="text" name="pickup" class="form-control mb-3" placeholder="Pickup" required>
+                        <input type="text" name="drop" class="form-control mb-3" placeholder="Drop" required>
+                        <input type="text" name="load" class="form-control mb-3" placeholder="Load (Tons)" required>
+                        <textarea name="message" class="form-control mb-3" placeholder="Details" required rows="4"></textarea>
+                        <button class="btn w-100 py-2">Request Quote</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="section text-center mt-5 mb-5">
+                <h3 class="mb-4">Contact Us</h3>
+                <p class="mb-2"><strong>📞 Phone:</strong> <a href="tel:+919910414712">+91-9910414712</a></p>
+                <p class="mb-2"><strong>🌐 Website:</strong> <a href="https://www.arawayxpress.com" target="_blank">www.arawayxpress.com</a></p>
+                <p><strong>📧 Email:</strong> <a href="mailto:info@arawayxpress.com">info@arawayxpress.com</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+    <div class="footercolor">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5 class="whitecolor">Address</h5>
+                        <ul class="nav flex-column mt-4">
+                            <li class="nav-item mb-2">
+                                <div class="d-flex">
+                                    <div class="mt-1">
+                                        <i class="fa-solid fa-location-dot me-3 "></i>
+                                    </div>
+
+                                    <a href="" class="whitecolor whitecoloritem">Corporate Address:
+                                        New Palam Vihar, Sector 112, Guragon, Haryana - 122017.</a>
+                                </div>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <div class="d-flex">
+                                    <div class="mt-1">
+                                        <i class="fa-solid fa-phone me-3 "></i>
+                                    </div>
+
+                                    <span>
+                                        <a href="tel: +91-9910414712"
+                                            class="whitecolor whitecoloritem">+91-9910414712</a>
+                                        
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <div class="d-flex ">
+                                    <div>
+                                        <i class="fa-regular fa-envelope me-3 "></i>
+                                    </div>
+                                    <a href="mailto:info@arawayxpress.com"
+                                        class="whitecolor whitecoloritem">info@arawayxpress.com</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <ul class="ps-0 d-flex gap-1 mt-3">
+                            <li class="footeritem">
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="footeritem">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li class="footeritem">
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li class="footeritem">
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 mt-5  mt-lg-0">
+                        <h5>Important Links</h5>
+                        <ul class="nav flex-column mt-4">
+                            <li class="nav-item mb-2 ">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                    <a href="#" class="nav-link p-0 whitecolor whitecoloritem">Home</a>
+                                </div>
+                            </li>
+                            <li class="nav-item mb-2 ">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                    <a href="#" class="nav-link p-0 whitecolor whitecoloritem">About</a>
+                                </div>
+                            </li>
+                            <li class="nav-item mb-2 ">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                    <a href="#" class="nav-link p-0 whitecolor whitecoloritem">Service</a>
+                                </div>
+                            </li>
+                            <li class="nav-item mb-2 ">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                    <a href="#" class="nav-link p-0 whitecolor whitecoloritem">Contact</a>
+                                </div>
+                            </li>
+                            <li class="nav-item mb-2 ">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                    <a target="_blank" href="https://demo.arawayxpress.in/login"
+                                        class="nav-link p-0 whitecolor whitecoloritem">Login</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-7 mt-5 mt-lg-0">
+                        <div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7015.219981015808!2d77.0407461422948!3d28.461170953034742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18457177d257%3A0xb64fce08c39bd171!2sSector%2015%2C%20Gurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1777721143039!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+<!-- FOOTER -->
+<div class="footer">
+
+    <p>Reg Offices | Delhi NCR | Mumbai | Bangalore | Guwahati </p>
+    
+<p>© 2026 Araway Express Solutions LLP. All Rights Reserved.</p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="script2.js"></script>
+</body>
+</html>
